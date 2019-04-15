@@ -1,0 +1,87 @@
+body {
+    background: -webkit-image-set(url('../assets/background.jpg') 1x, url('../assets/background@2x.jpg') 2x, url('../assets/background@3x.jpg') 3x);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo {
+    width: 194px;
+    height: 41px;
+    object-fit: contain;
+}
+
+h1 {
+    width: 592px;
+    height: 222px;
+    font-family: ReplicaPro;
+    font-size: 109px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: -6.5px;
+    text-align: left;
+    color: #efefef;
+}
+
+.contact-info {
+
+}
+
+.contact-info .email a, .contact-info .address{
+    width: 165px;
+    height: 145px;
+    font-family: ReplicaStd;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #efefef;
+}
+
+.contact-info .email a {
+
+}
+
+.contact-info .address p {
+}
+
+.contact-info .social-media {
+
+}
+
+.contact-info .social-media li {
+
+}
+
+.contact-info .social-media a {
+
+}
+
+.grid-container .grid-x.grid-padding-x{
+    position: relative;
+}
+.grid-container .cell::after {
+    content: 'brightlight Creative Agency';
+    position: absolute;
+    right: 0;
+    width: 119px;
+    height: 11px;
+    font-family: ReplicaStd;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #efefef;
+    transform: rotateZ(-90deg);
+}
