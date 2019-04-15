@@ -63,12 +63,11 @@ h1 {
 }
 
 .contact-info .email a {
-    transition: border .5s;
+    transition: color .5s;
 }
 
 .contact-info .email a:hover {
-    color: white;
-    border-bottom: 1px solid white;
+    color: #f15a29;
 }
 
 .contact-info .address p {
@@ -90,10 +89,12 @@ h1 {
     height: 31.3px;
     object-fit: contain;
 }
-.contact-info .social-media a img{
+
+.contact-info .social-media a img {
 
     transition: transform .3s;
 }
+
 .contact-info .social-media a img:hover {
     transform: rotate(360deg);
 }
@@ -145,6 +146,7 @@ h1 {
     .grid-container {
         padding: 0 73px;
     }
+
     .grid-container .cell::after {
         right: 0px;
     }
@@ -165,24 +167,26 @@ h1 {
         height: 300px;
     }
 }
-@media (max-width: 1024px){
-    .grid-container{
+
+@media (max-width: 1024px) {
+    .grid-container {
 
         padding: 0 13px !important;
     }
 }
 
 @media (max-width: 800px) {
-    body{
+    body {
         overflow: auto;
     }
 
-    h1{
+    h1 {
         font-size: 50px;
         margin-bottom: 20px !important;
         letter-spacing: -3px;
     }
-    .logo{
+
+    .logo {
         margin-bottom: 50px;
     }
 
