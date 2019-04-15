@@ -174,17 +174,13 @@ h1 {
     h1{
         font-size: 50px;
         margin-bottom: 20px !important;
-        /*letter-spacing: .3px;*/
+        letter-spacing: -3px;
     }
     .logo{
-        width: 150px;
         margin-bottom: 50px;
     }
 
     .grid-container .cell::after, .grid-container .cell::before {
         display: none;
     }
-}
-
-@media (max-width: 700px) {
 }
