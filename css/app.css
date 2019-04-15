@@ -1,3 +1,26 @@
+@font-face {
+    font-family: "ReplicaStd-Bold";
+    src: url("../assets/fonts/ReplicaStd-Bold.woff2") format("woff2"), url("../assets/fonts/ReplicaStd-Bold.woff") format("woff"), url("../assets/fonts/ReplicaStd-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "ReplicaStd-Italic";
+    src: url("../assets/fonts/ReplicaStd-Italic.woff2") format("woff2"), url("../assets/fonts/ReplicaStd-Italic.woff") format("woff"), url("../assets/fonts/ReplicaStd-Italic.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "ReplicaStd-Light";
+    src: url("../assets/fonts/ReplicaStd-Light.woff2") format("woff2"), url("../assets/fonts/ReplicaStd-Light.woff") format("woff"), url("../assets/fonts/ReplicaStd-Light.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
 body {
     background: -webkit-image-set(url('../assets/background.jpg') 1x, url('../assets/background@2x.jpg') 2x, url('../assets/background@3x.jpg') 3x);
     background-repeat: no-repeat;
@@ -9,35 +32,28 @@ body {
 }
 
 .logo {
-    width: 194px;
-    height: 41px;
+    width: 291px;
     object-fit: contain;
+    margin-bottom: 192px;
 }
 
 h1 {
-    width: 592px;
-    height: 222px;
-    font-family: ReplicaPro;
+    font-family: ReplicaStd-Bold;
     font-size: 109px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 0.92;
     letter-spacing: -6.5px;
     text-align: left;
     color: #efefef;
+    margin-bottom: 80px;
 }
 
-.contact-info {
-
-}
-
-.contact-info .email a, .contact-info .address{
+.contact-info .email a, .contact-info .address {
     width: 165px;
     height: 145px;
-    font-family: ReplicaStd;
+    font-family: ReplicaStd-Light;
     font-size: 18px;
-    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.39;
@@ -47,41 +63,122 @@ h1 {
 }
 
 .contact-info .email a {
+    transition: border .5s;
+}
 
+.contact-info .email a:hover {
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 .contact-info .address p {
+    margin-bottom: 15px;
 }
 
 .contact-info .social-media {
-
+    list-style-type: none;
+    display: flex;
+    max-width: 165px;
+    justify-content: space-between;
+    margin-left: 0;
 }
 
-.contact-info .social-media li {
+.contact-info .social-media a .instagram,
+.contact-info .social-media a .linkedin,
+.contact-info .social-media a .vimeo {
+    width: 31.3px;
+    height: 31.3px;
+    object-fit: contain;
+}
+.contact-info .social-media a img{
 
+    transition: transform .3s;
+}
+.contact-info .social-media a img:hover {
+    transform: rotate(360deg);
 }
 
-.contact-info .social-media a {
-
+.grid-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
-.grid-container .grid-x.grid-padding-x{
+.grid-container .grid-x.grid-padding-x {
     position: relative;
 }
+
 .grid-container .cell::after {
     content: 'brightlight Creative Agency';
     position: absolute;
-    right: 0;
-    width: 119px;
     height: 11px;
-    font-family: ReplicaStd;
+    font-family: ReplicaStd-Light;
     font-size: 10px;
     font-weight: 300;
-    font-style: normal;
     font-stretch: normal;
     line-height: 1.2;
     letter-spacing: 0.2px;
     text-align: left;
     color: #efefef;
     transform: rotateZ(-90deg);
+    right: -59px;
+    bottom: 170px;
+    width: 121px;
+}
+
+.grid-container .cell::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 478px;
+    bottom: 270px;
+    background-color: #efefef;
+}
+
+@media (max-width: 1250px) {
+    .grid-container .cell::after {
+        right: 0px;
+    }
+
+    .grid-container .cell::before {
+        right: 57px;
+    }
+
+    .logo {
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        margin-bottom: 30px !important;
+    }
+
+    .grid-container .cell::before {
+        height: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    body{
+        overflow: auto;
+    }
+
+    h1{
+        font-size: 50px;
+        margin-bottom: 20px !important;
+        letter-spacing: 1px;
+    }
+    .logo{
+        width: 150px;
+        margin-bottom: 50px;
+    }
+
+    .grid-container .cell::after, .grid-container .cell::before {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
 }
