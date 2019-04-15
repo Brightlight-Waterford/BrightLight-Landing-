@@ -168,7 +168,7 @@ h1 {
 @media (max-width: 1024px){
     .grid-container{
 
-        padding: 0 73px;
+        padding: 0 13px !important;
     }
 }
 

@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="704">
-              <caret line="170" column="24" selection-start-line="170" selection-start-column="24" selection-end-line="170" selection-end-column="24" />
+              <caret line="170" column="35" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -135,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555324779493</updated>
-      <workItem from="1555324780541" duration="5407000" />
+      <workItem from="1555324780541" duration="5447000" />
     </task>
     <task id="LOCAL-00001" summary="Changes to Page">
       <created>1555333458873</created>
@@ -148,7 +148,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5407000" />
+    <option name="totallyTimeSpent" value="5447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1600" y="23" width="1600" height="1722" extended-state="0" />
@@ -297,7 +297,7 @@
     <entry file="file://$PROJECT_DIR$/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
-          <caret line="170" column="24" selection-start-line="170" selection-start-column="24" selection-end-line="170" selection-end-column="24" />
+          <caret line="170" column="35" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
         </state>
       </provider>
     </entry>
