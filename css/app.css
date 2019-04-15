@@ -32,7 +32,7 @@ body {
 }
 
 .logo {
-    width: 291px;
+    width: 194px;
     object-fit: contain;
     margin-bottom: 192px;
 }
@@ -104,6 +104,8 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    max-width: 100%;
+    padding: 0 173px;
 }
 
 .grid-container .grid-x.grid-padding-x {
@@ -139,6 +141,10 @@ h1 {
 }
 
 @media (max-width: 1250px) {
+
+    .grid-container {
+        padding: 0 73px;
+    }
     .grid-container .cell::after {
         right: 0px;
     }
@@ -168,7 +174,7 @@ h1 {
     h1{
         font-size: 50px;
         margin-bottom: 20px !important;
-        letter-spacing: 1px;
+        /*letter-spacing: .3px;*/
     }
     .logo{
         width: 150px;
