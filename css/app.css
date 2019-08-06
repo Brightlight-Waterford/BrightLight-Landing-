@@ -48,6 +48,33 @@ h1 {
     color: #efefef;
     margin-bottom: 80px;
 }
+.contact-info .downloadable{
+    font-family: ReplicaStd-Light;
+    font-size: 18px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #efefef;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.contact-info .assets{
+    display: block;
+    padding-bottom: 50px;
+}
+.contact-info .assets a{
+    font-family: ReplicaStd-Light;
+    font-size: 18px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: 0.4px;
+    text-align: left;
+    text-decoration: underline;
+    color: #efefef;
+}
 
 .contact-info .email a, .contact-info .address {
     width: 165px;
@@ -193,4 +220,23 @@ h1 {
     .grid-container .cell::after, .grid-container .cell::before {
         display: none;
     }
+}
+
+.terms {
+    margin-top: 20px;
+}
+
+.terms a {
+    font-family: ReplicaStd-Light;
+    font-size: 18px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #efefef;
+}
+
+.terms a:hover {
+    text-decoration: underline;
 }
